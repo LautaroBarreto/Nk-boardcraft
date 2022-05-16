@@ -1,0 +1,203 @@
+/*reset*/
+body{
+    background-color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin: 0px;
+    color: black;
+}
+.gridbody{
+    display: grid;
+    grid-template-areas: "encabezado"
+    "cuerpo"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto 5%;
+    row-gap: 20px;
+    height: 100vh;
+}
+.encabezado{
+    grid-area: encabezado;
+}
+.cuerpo{
+    grid-area: cuerpo;
+}
+.footer1{
+    text-align: center;
+    grid-area: footer;
+    font-size: 75%;
+    margin-top: 10em;
+}
+
+.header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 0px 10px 20px;
+
+
+}
+.article1{
+    display: grid;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    text-align: center;
+}
+.instagram{
+    color: black;
+}
+.menu1{
+    text-align: right;
+    text-shadow: 2px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
+    }
+.item1{
+        padding: 0px 10px 0px 10px;
+        color: rgb(255, 248, 248);
+    }
+.titulo{
+        font-size: 5em;
+        text-align: center;
+    }
+.mitabla{
+    text-align: center;
+}
+.logo{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+}
+.header__titulo{
+    font-size: 3em;
+    text-align: center;
+    padding: 50px;
+    margin: 20px;
+    border-bottom: 1px solid black;
+}
+.ejemplotabla{
+    width: 100%;
+    opacity: 0.9;
+}
+.main__title{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.main__img{
+    border: solid black 1px;
+    border-radius: 10px;
+    height: 40%;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10em;
+    
+
+}
+.list_elegir{
+    margin: 100px 0px 200px;
+    padding-left: 35%;
+}
+.video{
+    display: block;
+    margin: 8em auto 8em;
+
+}
+.terminologia{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+dt{
+    text-decoration:underline;
+    font-style: italic;
+}
+.diccionario{
+    padding: 50px 300px 100px ;
+}
+.parrafos{
+    margin: 0px 200px 200px;
+    text-align: center;
+    vertical-align: inherit;
+}
+.citado{
+    font-size: 1em;
+}
+.tablaespecificaciones{
+    margin: auto;
+    margin-bottom: 20em;
+    width: 30em;
+    height: 10em;
+}
+.item{
+    border: 1px solid black;
+    text-align: center;
+}
+.galeriatablas{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    display: grid;
+    grid-template-areas: "tabu ola manein";
+    grid-template-columns: auto auto auto;
+    column-gap: 1px;
+    width: 100%;
+}
+.tabu{
+    grid-area: tabu;
+}
+.ola{
+    grid-area: ola;
+}
+.manein{
+    grid-area: manein;
+}
+
+.ptabla{
+    color: white;
+    text-align: center;
+    margin: 50px;
+}
+.subtitulo{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.procesop{
+    text-align: center;
+}
+.navnosotros{
+    background-color: black;
+    margin: 0px;
+    color: white;
+    display: block;
+}
+.imgnosotros{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 20em;
+
+}
+
+@media screen and (max-width:768px) {
+    .galeriatablas{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafos{
+        font-size: 20px;
+    }
+}
