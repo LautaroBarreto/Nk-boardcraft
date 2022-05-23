@@ -28,7 +28,6 @@ body{
     font-size: 75%;
     margin-top: 10em;
 }
-
 .header{
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -36,6 +35,13 @@ body{
     padding: 20px 0px 10px 20px;
 
 
+}
+.carousel-inner{
+    height: 50vh;
+    
+}
+.carrusel{
+    width: 5%;
 }
 .article1{
     display: grid;
