@@ -101,6 +101,7 @@ p{
     border: solid black 1px;
     border-radius: 10px;
     height: 40%;
+    max-width: 100%;
 }
 .main__img:hover{
     height: 50%;
@@ -213,4 +214,6 @@ dt{
 
 .tiendavirtual{
     text-align: center;
+    margin-top: 5em;
+    margin-bottom: auto;
 }
