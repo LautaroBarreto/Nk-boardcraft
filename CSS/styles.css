@@ -5,124 +5,244 @@ body {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 1.5em;
   margin: 0px;
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
   body a {
     text-decoration: none;
     color: black; }
-  body .gridbody {
-    display: grid;
-    grid-template-areas: "encabezado" "cuerpo" "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 10% auto 5%;
-    row-gap: 20px;
-    height: 100vh; }
-    body .gridbody .encabezado {
-      grid-area: encabezado; }
-      body .gridbody .encabezado .logo {
-        background-color: white;
-        width: 3em;
-        height: 3em;
-        border: 2px solid black;
-        border-radius: 5px; }
-    body .gridbody .cuerpo {
-      grid-area: cuerpo; }
-      body .gridbody .cuerpo .parrafos {
-        font-size: 20px; }
-      body .gridbody .cuerpo .header__titulo {
-        font-size: 4em;
-        padding: 0.5em;
-        border-bottom: 1px solid black; }
-      body .gridbody .cuerpo .imgslide {
-        max-width: 100%; }
-      body .gridbody .cuerpo .main__title {
-        margin: 2em;
-        font-size: 2em; }
-      body .gridbody .cuerpo .bordertop {
-        border-top: 1px solid black;
-        padding-top: 2em; }
-      body .gridbody .cuerpo .parrafos {
-        margin: 0em 20em 5em 20em; }
-      body .gridbody .cuerpo .list_elegir {
-        padding-left: 23em;
-        text-align: justify;
-        margin: 6em; }
-      body .gridbody .cuerpo .tablaespecificaciones {
-        margin: auto;
-        margin-bottom: 20em;
-        width: 30em;
-        height: 10em; }
-        body .gridbody .cuerpo .tablaespecificaciones .item {
-          border: 1px solid black;
-          text-align: center; }
-      body .gridbody .cuerpo .terminologia {
-        text-align: center;
-        display: block;
-        margin: 0px auto; }
-        body .gridbody .cuerpo .terminologia dt {
-          text-decoration: underline;
-          font-style: italic;
-          font-size: 1.5em;
-          padding-bottom: 0.5em; }
-        body .gridbody .cuerpo .terminologia .diccionario {
-          border: 1px solid black;
-          padding: 0px 5em;
-          margin: 0em 15em 5em 15em; }
-      body .gridbody .cuerpo .navnosotros {
-        background-color: black;
-        color: white; }
-        body .gridbody .cuerpo .navnosotros .nosotros {
-          margin: 5em 0em 5em 0em; }
-        body .gridbody .cuerpo .navnosotros .imgnosotros {
+  @media screen and (min-width: 768px) {
+    body .gridbody {
+      display: grid;
+      grid-template-areas: "encabezado" "cuerpo" "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 5% auto 5%;
+      row-gap: 2em;
+      height: 100%; }
+      body .gridbody .encabezado {
+        grid-area: encabezado;
+        display: flex;
+        justify-content: space-between; }
+        body .gridbody .encabezado .navegacion {
           display: flex;
-          justify-content: center;
-          margin: 5em;
-          height: 40em; }
-      body .gridbody .cuerpo .tiendavirtual {
-        margin-top: 10em; }
-      body .gridbody .cuerpo .form1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0em 10em 0em 10em; }
-      body .gridbody .cuerpo .galeriatablas {
-        background-color: black;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        body .gridbody .cuerpo .galeriatablas .main__img:hover {
-          border-radius: 10px;
-          max-width: 80%;
-          height: 50%; }
-        body .gridbody .cuerpo .galeriatablas .ptabla {
-          color: white;
+          justify-content: center; }
+        body .gridbody .encabezado .logo {
+          background-color: white;
+          width: 3em;
+          height: 3em;
+          border: 2px solid black;
+          border-radius: 5px; }
+      body .gridbody .cuerpo {
+        grid-area: cuerpo; }
+        body .gridbody .cuerpo .header__titulo {
+          font-size: 4em;
+          padding: 0.5em;
+          border-bottom: 1px solid black; }
+        body .gridbody .cuerpo .imgslide {
+          max-width: 100%; }
+        body .gridbody .cuerpo .main__title {
+          margin: 2em;
+          font-size: 2em; }
+        body .gridbody .cuerpo .bordertop {
+          border-top: 1px solid black;
+          padding-top: 2em; }
+        body .gridbody .cuerpo .list_elegir {
+          padding-left: 1em;
+          text-align: justify;
+          margin: 6em; }
+        body .gridbody .cuerpo .tablaespecificaciones {
+          margin: auto;
+          margin-bottom: 20em;
+          width: 30em;
+          height: 10em; }
+          body .gridbody .cuerpo .tablaespecificaciones .item {
+            border: 1px solid black;
+            text-align: center; }
+        body .gridbody .cuerpo .terminologia {
           text-align: center;
-          margin: 5em; }
-      @media screen and (min-width: 768px) {
+          display: block;
+          margin: 0px auto; }
+          body .gridbody .cuerpo .terminologia dt {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 1.5em;
+            padding-bottom: 0.5em; }
+          body .gridbody .cuerpo .terminologia .diccionario {
+            border: 1px solid black;
+            padding: 0px 5em;
+            margin: 0em 15em 5em 15em; }
+        body .gridbody .cuerpo .navnosotros {
+          background-color: black;
+          color: white; }
+          body .gridbody .cuerpo .navnosotros .nosotros {
+            margin: 5em 0em 5em 0em; }
+          body .gridbody .cuerpo .navnosotros .imgnosotros {
+            display: flex;
+            justify-content: center;
+            margin: 5em;
+            height: 40em; }
+        body .gridbody .cuerpo .tiendavirtual {
+          margin-top: 10em; }
+        body .gridbody .cuerpo .form1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0em 10em 0em 10em; }
         body .gridbody .cuerpo .galeriatablas {
           background-color: black;
           text-align: center;
-          display: grid;
-          grid-template-areas: "tabu ola manein";
-          grid-template-columns: auto auto auto;
-          column-gap: 1px;
-          max-width: 100%; }
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          body .gridbody .cuerpo .galeriatablas .main__img:hover {
+            border-radius: 10px;
+            max-width: 80%;
+            height: 50%; }
           body .gridbody .cuerpo .galeriatablas .ptabla {
             color: white;
             text-align: center;
-            margin: 50px; }
-        body .gridbody .cuerpo .tabu {
-          grid-area: tabu; }
-        body .gridbody .cuerpo .ola {
-          grid-area: ola; }
-        body .gridbody .cuerpo .manein {
-          grid-area: manein; } }
-      body .gridbody .cuerpo .video {
-        display: block;
-        margin: 8em auto 8em;
+            margin: 50px; } }
+    @media screen and (min-width: 768px) and (min-width: 768px) {
+      body .gridbody .cuerpo .galeriatablas {
+        background-color: black;
+        text-align: center;
+        display: grid;
+        grid-template-areas: "tabu ola manein";
+        grid-template-columns: auto auto auto;
+        column-gap: 1px;
         max-width: 100%; }
-    body .gridbody .footer1 {
-      grid-area: footer;
+        body .gridbody .cuerpo .galeriatablas .ptabla {
+          color: white;
+          text-align: center;
+          margin: 1em; }
+      body .gridbody .cuerpo .tabu {
+        grid-area: tabu; }
+      body .gridbody .cuerpo .ola {
+        grid-area: ola; }
+      body .gridbody .cuerpo .manein {
+        grid-area: manein; } }
+  @media screen and (min-width: 768px) {
+        body .gridbody .cuerpo .video {
+          display: block;
+          margin: 8em auto 8em; }
+      body .gridbody .footer1 {
+        grid-area: footer;
+        text-align: center;
+        font-size: 75%;
+        margin-top: 10em; } }
+
+.gridbody {
+  display: grid;
+  grid-template-areas: "encabezado" "cuerpo" "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 10% auto 5%;
+  row-gap: 20px;
+  height: 100vh; }
+  .gridbody .encabezado {
+    grid-area: encabezado; }
+    .gridbody .encabezado .logo {
+      background-color: white;
+      width: 3em;
+      height: 3em;
+      border: 2px solid black;
+      border-radius: 5px; }
+  .gridbody .cuerpo {
+    grid-area: cuerpo; }
+    .gridbody .cuerpo .parrafos {
+      font-size: 20px; }
+    .gridbody .cuerpo .header__titulo {
+      font-size: 4em;
+      padding: 0.5em;
+      border-bottom: 1px solid black; }
+    .gridbody .cuerpo .imgslide {
+      max-width: 100%; }
+    .gridbody .cuerpo .main__title {
+      margin: 2em;
+      font-size: 2em; }
+    .gridbody .cuerpo .bordertop {
+      border-top: 1px solid black;
+      padding-top: 2em; }
+    .gridbody .cuerpo .parrafos {
+      margin: 0em 20em 5em 20em; }
+    .gridbody .cuerpo .list_elegir {
+      padding-left: 23em;
+      text-align: justify;
+      margin: 6em; }
+    .gridbody .cuerpo .tablaespecificaciones {
+      margin: auto;
+      margin-bottom: 20em;
+      width: 30em;
+      height: 10em; }
+      .gridbody .cuerpo .tablaespecificaciones .item {
+        border: 1px solid black;
+        text-align: center; }
+    .gridbody .cuerpo .terminologia {
       text-align: center;
-      font-size: 75%;
+      display: block;
+      margin: 0px auto; }
+      .gridbody .cuerpo .terminologia dt {
+        text-decoration: underline;
+        font-style: italic;
+        font-size: 1.5em;
+        padding-bottom: 0.5em; }
+      .gridbody .cuerpo .terminologia .diccionario {
+        border: 1px solid black;
+        padding: 0px 5em;
+        margin: 0em 15em 5em 15em; }
+    .gridbody .cuerpo .navnosotros {
+      background-color: black;
+      color: white; }
+      .gridbody .cuerpo .navnosotros .nosotros {
+        margin: 5em 0em 5em 0em; }
+      .gridbody .cuerpo .navnosotros .imgnosotros {
+        display: flex;
+        justify-content: center;
+        margin: 5em;
+        height: 40em; }
+    .gridbody .cuerpo .tiendavirtual {
       margin-top: 10em; }
+    .gridbody .cuerpo .form1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0em 10em 0em 10em; }
+    .gridbody .cuerpo .galeriatablas {
+      background-color: black;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .gridbody .cuerpo .galeriatablas .main__img:hover {
+        border-radius: 10px;
+        max-width: 80%;
+        height: 50%; }
+      .gridbody .cuerpo .galeriatablas .ptabla {
+        color: white;
+        text-align: center;
+        margin: 50px; }
+    @media screen and (min-width: 768px) {
+      .gridbody .cuerpo .galeriatablas {
+        background-color: black;
+        text-align: center;
+        display: grid;
+        grid-template-areas: "tabu ola manein";
+        grid-template-columns: auto auto auto;
+        column-gap: 1px;
+        max-width: 100%; }
+        .gridbody .cuerpo .galeriatablas .ptabla {
+          color: white;
+          text-align: center;
+          margin: 50px; }
+      .gridbody .cuerpo .tabu {
+        grid-area: tabu; }
+      .gridbody .cuerpo .ola {
+        grid-area: ola; }
+      .gridbody .cuerpo .manein {
+        grid-area: manein; } }
+    .gridbody .cuerpo .video {
+      display: block;
+      margin: 8em auto 8em; }
+  .gridbody .footer1 {
+    grid-area: footer;
+    text-align: center;
+    font-size: 75%;
+    margin-top: 10em; }
