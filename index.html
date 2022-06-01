@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./img/logo napu kalu.png" type="image/x-icon">
-        <title>Nk Boardcraft</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="./CSS/styles.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Big+Shoulders+Inline+Display:wght@200&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap"
-            rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo napu kalu.png" type="image/x-icon">
+    <title>Nk Boardcraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Big+Shoulders+Inline+Display:wght@200&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
-        <div class="gridbody">
-            <header class="encabezado">
+<body>
+    <div class="gridbody">
+        <!--<header class="encabezado">
                 <section class="header">
                     <a href="./index.html">
                         <img class="logo img-fluid" src="./img/logo napu kalu.png" alt="nkboardcraft">
@@ -52,49 +53,85 @@
                     </ul>
                     </div>
                 </section>
-            </header>
-            <main class="cuerpo">
-                <section>
-                    <h1 class="header__titulo">
-                        NK boardcraft
-                    </h1>
-                </section>
+            </header>-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light encabezado">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img class="logo" src="/img/logo napu kalu.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/tablas.html">SURFBOARDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/salvamento.html">LIFESAVING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <main class="cuerpo">
+            <section>
+                <h1 class="header__titulo">
+                    <strong>NK boardcraft</strong>
+                </h1>
+            </section>
 
-                <article class="article1">
-                    <h2 class="mitabla h1">
+            <article class="article1">
+                <h2 class="main__title">
                     COMO ELEGIR MI TABLA
-                    </h2>
+                </h2>
                 <!--<img class="ejemplotabla" src="./img/tabla ejemplo.jpg" alt="tabla de rescate">-->
-                </article>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/surf rescue banne1.png" class="d-block w-100" alt="banner1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/surf rescue banner2.png" class="d-block w-100" alt="banner2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/surf rescue banne3.png" class="d-block w-100" alt="banner3">
-                        </div>
+            </article>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner imgslide">
+                    <div class="carousel-item active">
+                        <img src="./img/surf rescue banne1.png" class="d-block w-100" alt="banner1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/surf rescue banner2.png" class="d-block w-100" alt="banner2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/surf rescue banne3.png" class="d-block w-100" alt="banner3">
                     </div>
                 </div>
-                <ol class="list_elegir">
-                    <li>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, deleniti?
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis.
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet.
-                    </li>
-                </ol>
+            </div>
+            <ol class="list_elegir">
+                <li>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, deleniti?
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis.
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet.
+                </li>
+            </ol>
 
-                <h2 class="main__title">SURFBOARDS Y ESPECIFICACIONES</h2>
+            <article>
+                <h2 class="main__title bordertop">SURFBOARDS Y ESPECIFICACIONES</h2>
                 <table class="tablaespecificaciones">
                     <thead class="tabespecificaciones">
                         <th class="item">
@@ -143,61 +180,75 @@
                         </tr>
                     </tfoot>
                 </table>
-
-                <h3 class="main__title h2">
+            </article>
+            
+            <article>
+                <h3 class="main__title bordertop">
                     PRIMEROS PASOS CON TU SURFBOARD
                 </h3>
                 <p class="parrafos">
-                    Para lograr el uso adecuado de tu tabla y poder dar tus primeras remadas con ella te dejamos un video tutorial y algunos consejos.
-                    En primer lugar crea una constancia de entrenamiento, al princio intenta subirte a la tabla (acostado/a) desde una orilla donde el agua te llegue a las rodillas como máximo. 
-                    Levantando la punta de los talones logrando dejar tus piernas a 90 grados, y dando brazadas que vayan desde lo más extendido de tus brazos hasta tu cintura.
+                    Para lograr el uso adecuado de tu tabla y poder dar tus primeras remadas con ella te dejamos un video
+                    tutorial y algunos consejos.
+                    En primer lugar crea una constancia de entrenamiento, al princio intenta subirte a la tabla (acostado/a)
+                    desde una orilla donde el agua te llegue a las rodillas como máximo.
+                    Levantando la punta de los talones logrando dejar tus piernas a 90 grados, y dando brazadas que vayan
+                    desde lo más extendido de tus brazos hasta tu cintura.
                 </p>
+            </article>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vIFPOLLHjZg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <h2 class="main__title bordertop">TERMINOLOGÍA:</h2>
+            <dl class="terminologia">
+                <dt>
+                    "Surfboards"
+                </dt>
+                <dt>
+                    "Racer Surfboard"
+                </dt>
+                <dt>
+                    "Tabla de velocidad"
+                </dt>
 
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vIFPOLLHjZg" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <h2 class="main__title h1">TERMINOLOGÍA:</h2>
-                <dl class="terminologia">
-                    <dt>
-                        "Surfboards"
-                    </dt>
-                    <dt>
-                        "Racer Surfboard"
-                    </dt>
-                    <dt>
-                        "Tabla de velocidad"
-                    </dt>
+                <dd class="diccionario">
+                    Se refieren a tablas destinadas al deporte. Por su forma, son tablas de velocidad con capacidad de
+                    area para una sola persona.
+                </dd>
 
-                    <dd class="diccionario">
-                        Se refieren a tablas destinadas al deporte. Por su forma, son tablas de velocidad con capacidad de area para una sola persona.
-                    </dd>
-
-                    <dt>"Tabla de rescate"</dt>
-                    <dd class="diccionario">
-                        Estas tablas estan destinadas al uso de profesionales "Guardavidas". Normalmente tienen capacidad de area para soportar en peso y espacio para dos personas, de color amarillo con sus letras en rojo, y con manijas de agarre casi en su totalidad del largo.
-                    </dd>
-                </dl>
-                <div class="tiendavirtual">
-                    <div class="textotienda">
-                    <i class="bi bi-bag"><strong>Ir a la <a href="https://https://www.mercadolibre.com.ar/" target="_blank">TIENDA VIRTUAL</a></strong></i>
-                    </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                    </svg>
+                <dt>"Tabla de rescate"</dt>
+                <dd class="diccionario">
+                    Estas tablas estan destinadas al uso de profesionales "Guardavidas". Normalmente tienen capacidad de
+                    area para soportar en peso y espacio para dos personas, de color amarillo con sus letras en rojo, y
+                    con manijas de agarre casi en su totalidad del largo.
+                </dd>
+            </dl>
+            <div class="tiendavirtual">
+                <div class="textotienda">
+                    <i class="bi bi-bag"><strong>Ir a la <a href="https://https://www.mercadolibre.com.ar/"
+                                target="_blank">TIENDA VIRTUAL</a></strong></i>
                 </div>
-            </main>
-            <footer class="footer1">
-                <p>
-                    Seguinos en <a class="instagram" href="https://www.instagram.com/miyagi_sr" target="_blank">INSTAGRAM</a>
-                </p>
-                <p>
-                    Desarrollado por Lautaro Barreto.
-                </p>
-            </footer>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+            </div>
+        </main>
+        <footer class="footer1">
+            <p>
+                Seguinos en <a class="instagram" href="https://www.instagram.com/miyagi_sr"
+                    target="_blank">INSTAGRAM</a>
+            </p>
+            <p>
+                Desarrollado por Lautaro Barreto.
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
 
 </html>

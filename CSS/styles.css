@@ -1,231 +1,128 @@
-/*reset*/
-body{
-    background-color: white;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 30px;
-    margin: 0px;
-    color: black;
-}
-.gridbody{
+.subtitulo {
+  color: white; }
+
+body {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 1.5em;
+  margin: 0px;
+  text-align: center; }
+  body a {
+    text-decoration: none;
+    color: black; }
+  body .gridbody {
     display: grid;
-    grid-template-areas: "encabezado"
-    "cuerpo"
-    "footer";
+    grid-template-areas: "encabezado" "cuerpo" "footer";
     grid-template-columns: auto;
     grid-template-rows: 10% auto 5%;
     row-gap: 20px;
-    height: 100vh;
-}
-.encabezado{
-    grid-area: encabezado;
-}
-.cuerpo{
-    grid-area: cuerpo;
-}
-.footer1{
-    text-align: center;
-    grid-area: footer;
-    font-size: 75%;
-    margin-top: 10em;
-}
-.header{
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content:space-between;
-    padding: 20px 0px 10px 20px;
-
-
-}
-.carousel-inner{
-    height: 50vh;
-    
-}
-.carrusel{
-    width: 5%;
-}
-.article1{
-    display: grid;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-p{
-    text-align: center;
-}
-.instagram{
-    color: black;
-}
-.menu1{
-    text-align: right;
-    text-shadow: 2px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0px 5px;
-    }
-.item1{
-        padding: 0px 10px 0px 10px;
-        color: rgb(255, 248, 248);
-    }
-.titulo{
-        font-size: 5em;
+    height: 100vh; }
+    body .gridbody .encabezado {
+      grid-area: encabezado; }
+      body .gridbody .encabezado .logo {
+        background-color: white;
+        width: 3em;
+        height: 3em;
+        border: 2px solid black;
+        border-radius: 5px; }
+    body .gridbody .cuerpo {
+      grid-area: cuerpo; }
+      body .gridbody .cuerpo .parrafos {
+        font-size: 20px; }
+      body .gridbody .cuerpo .header__titulo {
+        font-size: 4em;
+        padding: 0.5em;
+        border-bottom: 1px solid black; }
+      body .gridbody .cuerpo .imgslide {
+        max-width: 100%; }
+      body .gridbody .cuerpo .main__title {
+        margin: 2em;
+        font-size: 2em; }
+      body .gridbody .cuerpo .bordertop {
+        border-top: 1px solid black;
+        padding-top: 2em; }
+      body .gridbody .cuerpo .parrafos {
+        margin: 0em 20em 5em 20em; }
+      body .gridbody .cuerpo .list_elegir {
+        padding-left: 23em;
+        text-align: justify;
+        margin: 6em; }
+      body .gridbody .cuerpo .tablaespecificaciones {
+        margin: auto;
+        margin-bottom: 20em;
+        width: 30em;
+        height: 10em; }
+        body .gridbody .cuerpo .tablaespecificaciones .item {
+          border: 1px solid black;
+          text-align: center; }
+      body .gridbody .cuerpo .terminologia {
         text-align: center;
-    }
-.mitabla{
-    text-align: center;
-}
-.logo{
-    background-color: white;
-    width: 80px;
-    height: 80px;
-    border: 2px solid black;
-}
-.header__titulo{
-    font-size: 3em;
-    text-align: center;
-    padding: 50px;
-    margin: 20px;
-    border-bottom: 1px solid black;
-}
-.ejemplotabla{
-    width: 100%;
-    opacity: 0.9;
-}
-.main__title{
-    text-align: center;
-    margin-top: 1em;
-}
-
-.main__img{
-    border: solid black 1px;
-    border-radius: 10px;
-    height: 40%;
-    max-width: 100%;
-}
-.main__img:hover{
-    height: 50%;
-}
-.form1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0px 10em;
-    
-
-}
-.list_elegir{
-    margin: 100px 0px 200px;
-    padding-left: 35%;
-}
-.video{
-    display: block;
-    margin: 8em auto 8em;
-
-}
-.terminologia{
-    text-align: center;
-    display: block;
-    margin: 0px auto;
-}
-dt{
-    text-decoration:underline;
-    font-style: italic;
-}
-.diccionario{
-    padding: 50px 300px 100px ;
-}
-.parrafos{
-    margin: 0px 200px 200px;
-    text-align: center;
-    vertical-align: inherit;
-}
-.citado{
-    font-size: 1em;
-}
-.tablaespecificaciones{
-    margin: auto;
-    margin-bottom: 20em;
-    width: 30em;
-    height: 10em;
-}
-.item{
-    border: 1px solid black;
-    text-align: center;
-}
-.galeriatablas{
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.tabu{
-    grid-area: tabu;
-}
-.ola{
-    grid-area: ola;
-}
-.manein{
-    grid-area: manein;
-}
-
-.ptabla{
-    color: white;
-    text-align: center;
-    margin: 50px;
-}
-.subtitulo{
-    color: white;
-    text-align: center;
-    padding-top: 100px;
-}
-.procesop{
-    text-align: center;
-}
-.navnosotros{
-    background-color: black;
-    margin: 0px;
-    color: white;
-    display: block;
-}
-.imgnosotros{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    height: 20em;
-
-}
-
-@media screen and (min-width:768px) {
-    .galeriatablas{
-        background-color: rgb(0, 0, 0);
+        display: block;
+        margin: 0px auto; }
+        body .gridbody .cuerpo .terminologia dt {
+          text-decoration: underline;
+          font-style: italic;
+          font-size: 1.5em;
+          padding-bottom: 0.5em; }
+        body .gridbody .cuerpo .terminologia .diccionario {
+          border: 1px solid black;
+          padding: 0px 5em;
+          margin: 0em 15em 5em 15em; }
+      body .gridbody .cuerpo .navnosotros {
+        background-color: black;
+        color: white; }
+        body .gridbody .cuerpo .navnosotros .nosotros {
+          margin: 5em 0em 5em 0em; }
+        body .gridbody .cuerpo .navnosotros .imgnosotros {
+          display: flex;
+          justify-content: center;
+          margin: 5em;
+          height: 40em; }
+      body .gridbody .cuerpo .tiendavirtual {
+        margin-top: 10em; }
+      body .gridbody .cuerpo .form1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0em 10em 0em 10em; }
+      body .gridbody .cuerpo .galeriatablas {
+        background-color: black;
         text-align: center;
-        display: grid;
-        grid-template-areas: "tabu ola manein";
-        grid-template-columns: auto auto auto;
-        column-gap: 1px;
-        width: 100%;
-        }
-    .parrafos{
-        font-size: 20px;
-    }
-}
-
-.tabu{
-    grid-area: tabu;
-}
-.ola{
-    grid-area: ola;
-}
-.manein{
-    grid-area: manein;
-}
-
-
-
-.tiendavirtual{
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: auto;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .gridbody .cuerpo .galeriatablas .main__img:hover {
+          border-radius: 10px;
+          max-width: 80%;
+          height: 50%; }
+        body .gridbody .cuerpo .galeriatablas .ptabla {
+          color: white;
+          text-align: center;
+          margin: 5em; }
+      @media screen and (min-width: 768px) {
+        body .gridbody .cuerpo .galeriatablas {
+          background-color: black;
+          text-align: center;
+          display: grid;
+          grid-template-areas: "tabu ola manein";
+          grid-template-columns: auto auto auto;
+          column-gap: 1px;
+          max-width: 100%; }
+          body .gridbody .cuerpo .galeriatablas .ptabla {
+            color: white;
+            text-align: center;
+            margin: 50px; }
+        body .gridbody .cuerpo .tabu {
+          grid-area: tabu; }
+        body .gridbody .cuerpo .ola {
+          grid-area: ola; }
+        body .gridbody .cuerpo .manein {
+          grid-area: manein; } }
+      body .gridbody .cuerpo .video {
+        display: block;
+        margin: 8em auto 8em;
+        max-width: 100%; }
+    body .gridbody .footer1 {
+      grid-area: footer;
+      text-align: center;
+      font-size: 75%;
+      margin-top: 10em; }
