@@ -28,7 +28,7 @@ body {
         grid-area: cuerpo;
         width: 100vw; }
         body .gridbody .cuerpo .header__titulo {
-          font-size: 4em;
+          font-size: 2em;
           padding: 0.5em;
           border-bottom: 1px solid black; }
         body .gridbody .cuerpo .imgslide {
@@ -145,23 +145,22 @@ body {
     .gridbody .cuerpo .parrafos {
       font-size: 20px; }
     .gridbody .cuerpo .header__titulo {
-      font-size: 4em;
+      font-size: 2em;
       padding: 0.5em;
       border-bottom: 1px solid black; }
     .gridbody .cuerpo .imgslide {
       max-width: 100%; }
     .gridbody .cuerpo .main__title {
       margin: 2em;
-      font-size: 2em; }
+      font-size: 1em; }
     .gridbody .cuerpo .bordertop {
       border-top: 1px solid black;
       padding-top: 2em; }
     .gridbody .cuerpo .parrafos {
-      margin: 0em 20em 5em 20em; }
+      padding: 5px; }
     .gridbody .cuerpo .list_elegir {
-      padding-left: 23em;
-      text-align: justify;
-      margin: 6em; }
+      padding: 5px;
+      text-align: center; }
     .gridbody .cuerpo .tablaespecificaciones {
       margin: auto;
       margin-bottom: 20em;
@@ -181,8 +180,7 @@ body {
         padding-bottom: 0.5em; }
       .gridbody .cuerpo .terminologia .diccionario {
         border: 1px solid black;
-        padding: 0px 5em;
-        margin: 0em 15em 5em 15em; }
+        padding: 0px 5em; }
     .gridbody .cuerpo .navnosotros {
       background-color: black;
       color: white; }
@@ -196,10 +194,12 @@ body {
     .gridbody .cuerpo .tiendavirtual {
       margin-top: 10em; }
     .gridbody .cuerpo .form1 {
+      width: 100vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 0em 10em 0em 10em; }
+      margin: 5px;
+      padding: 5px; }
     .gridbody .cuerpo .galeriatablas {
       background-color: black;
       text-align: center;
@@ -234,8 +234,7 @@ body {
       .gridbody .cuerpo .manein {
         grid-area: manein; } }
     .gridbody .cuerpo .video {
-      display: block;
-      margin: 8em auto 8em; }
+      display: block; }
   .gridbody .footer1 {
     grid-area: footer;
     text-align: center;

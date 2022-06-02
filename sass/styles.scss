@@ -37,7 +37,7 @@ body{
                 grid-area: cuerpo;
                 width: 100vw;
                 .header__titulo{
-                    font-size: $h1size;
+                    font-size: $h2size;
                     padding: 0.5em;
                     border-bottom: 1px solid $colorsecundario;
                 }
@@ -105,8 +105,6 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     margin: 0em 10em 0em 10em;
-                    
-                
                 }
                 .galeriatablas{
                     background-color: rgb(0, 0, 0);
@@ -200,7 +198,7 @@ body{
                 font-size: 20px;
             }
             .header__titulo{
-                font-size: $h1size;
+                font-size: $h2size;
                 padding: 0.5em;
                 border-bottom: 1px solid $colorsecundario;
             }
@@ -209,20 +207,18 @@ body{
             }
             .main__title{
                 margin: 2em;
-                font-size: $h2size;
+                font-size: $h3size;
             }
             .bordertop {
                 border-top: 1px solid $colorsecundario;
                 padding-top: 2em;
             }
             .parrafos{
-                margin: 0em 20em 5em 20em;
+                padding: 5px;
             }
             .list_elegir{
-                padding-left: 23em;
-                text-align:justify;
-                margin: 6em;
-
+                padding: 5px;
+                text-align: center;
             }
             .tablaespecificaciones{
                 margin: auto;
@@ -247,7 +243,6 @@ body{
                 .diccionario{
                     border: 1px solid $colorsecundario;
                     padding: 0px 5em;
-                    margin: 0em 15em 5em 15em;
                 }
             }
             .navnosotros{
@@ -267,12 +262,12 @@ body{
                 margin-top: 10em;
             }
             .form1{
+                width: 100vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin: 0em 10em 0em 10em;
-                
-            
+                margin: 5px;
+                padding: 5px
             }
             .galeriatablas{
                 background-color: rgb(0, 0, 0);
@@ -319,8 +314,6 @@ body{
             }
             .video{
                 display: block;
-                margin: 8em auto 8em;
-            
             }
         }
 
