@@ -10,6 +10,12 @@ body {
   body a {
     text-decoration: none;
     color: black; }
+  body .logo {
+    background-color: white;
+    height: 3em;
+    width: 3em;
+    border-radius: 5px;
+    border: 2px solid black; }
   @media screen and (min-width: 768px) {
     body .gridbody {
       display: grid;
@@ -18,21 +24,9 @@ body {
       grid-template-rows: 5% auto 5%;
       row-gap: 2em;
       height: 100%; }
-      body .gridbody .encabezado {
-        grid-area: encabezado;
-        display: flex;
-        justify-content: space-between; }
-        body .gridbody .encabezado .navegacion {
-          display: flex;
-          justify-content: center; }
-        body .gridbody .encabezado .logo {
-          background-color: white;
-          width: 3em;
-          height: 3em;
-          border: 2px solid black;
-          border-radius: 5px; }
       body .gridbody .cuerpo {
-        grid-area: cuerpo; }
+        grid-area: cuerpo;
+        width: 100vw; }
         body .gridbody .cuerpo .header__titulo {
           font-size: 4em;
           padding: 0.5em;
@@ -146,7 +140,8 @@ body {
       border: 2px solid black;
       border-radius: 5px; }
   .gridbody .cuerpo {
-    grid-area: cuerpo; }
+    grid-area: cuerpo;
+    width: 100vw; }
     .gridbody .cuerpo .parrafos {
       font-size: 20px; }
     .gridbody .cuerpo .header__titulo {
@@ -170,7 +165,7 @@ body {
     .gridbody .cuerpo .tablaespecificaciones {
       margin: auto;
       margin-bottom: 20em;
-      width: 30em;
+      width: 100vw;
       height: 10em; }
       .gridbody .cuerpo .tablaespecificaciones .item {
         border: 1px solid black;

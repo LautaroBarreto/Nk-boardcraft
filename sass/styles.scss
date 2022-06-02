@@ -7,11 +7,18 @@ body{
     margin: 0px;
     text-align: center;
     box-sizing: border-box;
-
     a{
         text-decoration: none;
         color: $colorsecundario;
     }
+    .logo{
+        background-color: $colorprimario;
+        height: 3em;
+        width: 3em;
+        border-radius: 5px;
+        border: 2px solid $colorsecundario;
+    }
+
     @media screen and (min-width: 768px){
         .gridbody{
             display: grid;
@@ -25,24 +32,10 @@ body{
             row-gap: 2em;
             height: 100%;
     
-            .encabezado{
-                grid-area: encabezado;
-                display: flex;
-                justify-content: space-between;
-                .navegacion{
-                    display: flex;
-                    justify-content: center;
-                }
-                .logo{
-                    background-color: $colorprimario;
-                    width: 3em;
-                    height: 3em;
-                    border: 2px solid $colorsecundario;
-                    border-radius: 5px;
-                }
-            }
+            
             .cuerpo{
                 grid-area: cuerpo;
+                width: 100vw;
                 .header__titulo{
                     font-size: $h1size;
                     padding: 0.5em;
@@ -202,6 +195,7 @@ body{
 
         .cuerpo{
             grid-area: cuerpo;
+            width: 100vw;
             .parrafos{
                 font-size: 20px;
             }
@@ -233,7 +227,7 @@ body{
             .tablaespecificaciones{
                 margin: auto;
                 margin-bottom: 20em;
-                width: 30em;
+                width: 100vw;
                 height: 10em;
                 .item{
                     border: 1px solid black;
