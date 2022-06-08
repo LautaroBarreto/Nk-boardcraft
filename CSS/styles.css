@@ -1,6 +1,7 @@
 .subtitulo {
   color: white; }
 
+/* Indentacion general de las paginas dentro del body*/
 body {
   font-family: 'Big Shoulders Display', cursive;
   font-size: 1.5em;
@@ -25,8 +26,8 @@ body {
       row-gap: 2em;
       height: 100%; }
       body .gridbody .cuerpo {
-        grid-area: cuerpo;
-        width: 100vw; }
+        width: 100vw;
+        grid-area: cuerpo; }
         body .gridbody .cuerpo .header__titulo {
           font-size: 2em;
           padding: 0.5em;
@@ -80,7 +81,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          margin: 0em 10em 0em 10em; }
+          align-items: center; }
         body .gridbody .cuerpo .galeriatablas {
           background-color: black;
           text-align: center;
@@ -124,6 +125,7 @@ body {
         font-size: 75%;
         margin-top: 10em; } }
 
+/* Grid para Desktop */
 .gridbody {
   display: grid;
   grid-template-areas: "encabezado" "cuerpo" "footer";
@@ -132,7 +134,8 @@ body {
   row-gap: 20px;
   height: 100vh; }
   .gridbody .encabezado {
-    grid-area: encabezado; }
+    grid-area: encabezado;
+    width: 100vw; }
     .gridbody .encabezado .logo {
       background-color: white;
       width: 3em;
@@ -141,7 +144,8 @@ body {
       border-radius: 5px; }
   .gridbody .cuerpo {
     grid-area: cuerpo;
-    width: 100vw; }
+    width: 100vw;
+    box-sizing: border-box; }
     .gridbody .cuerpo .parrafos {
       font-size: 20px; }
     .gridbody .cuerpo .header__titulo {
@@ -156,8 +160,12 @@ body {
     .gridbody .cuerpo .bordertop {
       border-top: 1px solid black;
       padding-top: 2em; }
-    .gridbody .cuerpo .parrafos {
-      padding: 5px; }
+    .gridbody .cuerpo .articlep {
+      box-sizing: border-box; }
+      .gridbody .cuerpo .articlep .parrafos {
+        margin: 10em; }
+    .gridbody .cuerpo .article1 {
+      max-width: 100vw; }
     .gridbody .cuerpo .list_elegir {
       padding: 5px;
       text-align: center; }
@@ -182,6 +190,7 @@ body {
         border: 1px solid black;
         padding: 0px 5em; }
     .gridbody .cuerpo .navnosotros {
+      box-sizing: border-box;
       background-color: black;
       color: white; }
       .gridbody .cuerpo .navnosotros .nosotros {
@@ -194,12 +203,9 @@ body {
     .gridbody .cuerpo .tiendavirtual {
       margin-top: 10em; }
     .gridbody .cuerpo .form1 {
-      width: 100vw;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      margin: 5px;
-      padding: 5px; }
+      justify-content: center; }
     .gridbody .cuerpo .galeriatablas {
       background-color: black;
       text-align: center;
@@ -221,12 +227,14 @@ body {
         display: grid;
         grid-template-areas: "tabu ola manein";
         grid-template-columns: auto auto auto;
-        column-gap: 1px;
+        column-gap: auto;
         max-width: 100%; }
         .gridbody .cuerpo .galeriatablas .ptabla {
           color: white;
           text-align: center;
           margin: 50px; }
+        .gridbody .cuerpo .galeriatablas .main__img {
+          border-radius: 10px; }
       .gridbody .cuerpo .tabu {
         grid-area: tabu; }
       .gridbody .cuerpo .ola {
@@ -236,6 +244,7 @@ body {
     .gridbody .cuerpo .video {
       display: block; }
   .gridbody .footer1 {
+    /*Pie de pagina*/
     grid-area: footer;
     text-align: center;
     font-size: 75%;
