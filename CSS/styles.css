@@ -82,6 +82,12 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center; }
+          body .gridbody .cuerpo .form1 input {
+            width: 40%; }
+          body .gridbody .cuerpo .form1 textarea {
+            width: 40%; }
+          body .gridbody .cuerpo .form1 botones {
+            padding-top: 15px; }
         body .gridbody .cuerpo .galeriatablas {
           background-color: black;
           text-align: center;
