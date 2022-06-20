@@ -171,6 +171,13 @@ body{
                 text-align: center;
                 font-size: 75%;
                 margin-top: 10em;
+                background-color: lightgray;
+                .tienda{
+                    .logotienda{
+                        max-width: 10%;
+                    }
+                }
+                
             }
         }
 
@@ -340,5 +347,19 @@ body{
             text-align: center;
             font-size: 75%;
             margin-top: 10em;
+            .footergrid{
+                background-color: lightgray;
+                margin-top: 2em;
+                display: grid;
+                grid-template-areas: divf1 divf2 tiendavirtual;
+                grid-template-columns: auto auto auto;
+                row-gap: 2em;
+                .tienda{
+                    .logotienda{
+                        max-width: 10%;
+                    }
+                }
+
+            }
         }
 }

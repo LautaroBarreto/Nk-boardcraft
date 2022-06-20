@@ -129,7 +129,10 @@ body {
         grid-area: footer;
         text-align: center;
         font-size: 75%;
-        margin-top: 10em; } }
+        margin-top: 10em;
+        background-color: lightgray; }
+        body .gridbody .footer1 .tienda .logotienda {
+          max-width: 10%; } }
 
 /* Grid para Desktop */
 .gridbody {
@@ -255,3 +258,12 @@ body {
     text-align: center;
     font-size: 75%;
     margin-top: 10em; }
+    .gridbody .footer1 .footergrid {
+      background-color: lightgray;
+      margin-top: 2em;
+      display: grid;
+      grid-template-areas: divf1 divf2 tiendavirtual;
+      grid-template-columns: auto auto auto;
+      row-gap: 2em; }
+      .gridbody .footer1 .footergrid .tienda .logotienda {
+        max-width: 10%; }
